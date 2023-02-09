@@ -4,7 +4,7 @@ _
  \ \
  / /                |\\
 / /     .-`````-.   / ^`-.
-\ \    /         \_/  {|} `o        -KHHHHHHHHHHHHHHHH
+\ \    /         \_/  {|} `o        -KHHHHHHHHHHHHHHHH git subtree push --prefix dist origin gh-pages
  \ \  /   .---.   \\ _  ,--'
   \ \/   /     \,  \( `^^^
    \   \/\      (\  )
