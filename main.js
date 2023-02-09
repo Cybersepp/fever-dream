@@ -1,6 +1,7 @@
 import './style.css'
 import * as THREE from 'three';
 import '/null.mp3'
+
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 const scene = new THREE.Scene();
@@ -20,7 +21,8 @@ const material = new THREE.MeshBasicMaterial({color: 0x39ff14, wireframe: true})
 const torus = new THREE.Mesh(geometry, material);
 scene.add(torus)
 
-var audio = new Audio('null.mp3');
+let audioUrl = require('/null.mp3');
+var audio = new Audio(audioUrl);
 audio.play();
 
 function animate(starArr) {
@@ -74,9 +76,6 @@ for (var j = 0; j < allElements.length; j++) {
         setTimeout(type, 60);
     })();
 }
-
-var audio = new Audio('audio_file.mp3');
-audio.play();
 
 document.body.addEventListener("keydown", function (event) {
     if (event.key === "Enter" || event.key === "Y" || event.key === "y") {
