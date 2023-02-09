@@ -21,7 +21,7 @@ const material = new THREE.MeshBasicMaterial({color: 0x39ff14, wireframe: true})
 const torus = new THREE.Mesh(geometry, material);
 scene.add(torus)
 
-let audioUrl = require('/null.mp3');
+let audioUrl = require('/null*.mp3');
 var audio = new Audio(audioUrl);
 audio.play();
 
