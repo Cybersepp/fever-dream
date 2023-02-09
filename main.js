@@ -21,9 +21,10 @@ const material = new THREE.MeshBasicMaterial({color: 0x39ff14, wireframe: true})
 const torus = new THREE.Mesh(geometry, material);
 scene.add(torus)
 
-let audioUrl = require('/null*.mp3');
-var audio = new Audio(audioUrl);
-audio.play();
+// maybe next time
+// let audioUrl = require('/null.mp3');
+// var audio = new Audio(audioUrl);
+// audio.play();
 
 function animate(starArr) {
     requestAnimationFrame(animate)
