@@ -19,6 +19,8 @@ const material = new THREE.MeshBasicMaterial({color: 0x39ff14, wireframe: true})
 const torus = new THREE.Mesh(geometry, material);
 scene.add(torus)
 
+var audio = new Audio('null.mp3');
+audio.play();
 
 function animate(starArr) {
     requestAnimationFrame(animate)
